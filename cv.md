@@ -15,3 +15,10 @@ I'm an enthusiastic and detail-oriented Frontend Software Engineer seeking an en
 - HTML, CSS, JavaScript, GIT
 - Framework: Bootstrap
 - Responsive design
+
+#### Code example
+```
+function multiply(a, b) {
+  return a * b
+}
+```
