@@ -25,3 +25,7 @@ function multiply(a, b) {
 
 #### Work experience
 Not yet
+
+#### Education and courses
+- HTML, CSS, JS, GIT video courses on YouTube
+- JavaScript https://learn.javascript.ru/
