@@ -1,34 +1,34 @@
 # Ihor Andrianov
 
-## Personal info
+## Personal info:
 
 - E-mail: icecrid@gmail.com
 - Phone: +380675457754
 
-### Profile
+### Profile:
 I'm an enthusiastic and detail-oriented Frontend Software Engineer seeking an entry-level position with Company to use my skills in coding, troubleshooting complex problems, and assisting in the timely completion of projects.
 
 ---
 
-#### Skills
+#### Skills:
 
 - HTML, CSS, JavaScript, GIT
 - Framework: Bootstrap
 - Responsive design
 
-#### Code example
+#### Code example:
 ```
 function multiply(a, b) {
   return a * b
 }
 ```
 
-#### Work experience
+#### Work experience:
 Not yet
 
-#### Education and courses
+#### Education and courses:
 - HTML, CSS, JS, GIT video courses on YouTube
 - JavaScript https://learn.javascript.ru/
 
-#### Language
+#### Language:
 - English level A2
