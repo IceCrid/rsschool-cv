@@ -29,3 +29,6 @@ Not yet
 #### Education and courses
 - HTML, CSS, JS, GIT video courses on YouTube
 - JavaScript https://learn.javascript.ru/
+
+#### Language
+- English level A2
