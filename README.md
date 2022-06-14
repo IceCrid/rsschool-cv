@@ -1,3 +1,5 @@
 rsschool-cv-html
 
-[https://icecrid.github.io/rsschool-cv/](https://icecrid.github.io/rsschool-cv/)
+My CV as a markup is  [here](https://icecrid.github.io/rsschool-cv/cv)
+
+My CV as a website is [here](https://icecrid.github.io/rsschool-cv/)
