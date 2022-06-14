@@ -27,27 +27,31 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+
     font-family: "Karla", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    background-color: #F3E1F4;
     color: #4d2323;
+
+    background-color: #F3E1F4;
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .header {
     position: absolute;
     left: 0;
     top: 0;
+
     width: 100%;
     min-height: 80px;
     padding: 20px;
@@ -70,22 +74,27 @@ body {
 
 .header__link {
     position: relative;
-    transition: color 0.3s ease-in-out;
-    color: #030203;
     text-decoration: none;
+    color: #030203;
+
+    transition: color 0.3s ease-in-out;
 }
 
 .header__link::after{
     content: '';
-    display: block;
+
     position: absolute;
     left: 0;
     bottom: -12%;
-    background: #660afa;
+
+    display: block;
     height: 2px;
     width: 0%;
-    transition: width 0.5s ease-in-out;
+    
+    background: #660afa;
     opacity: 0;
+    
+    transition: width 0.5s ease-in-out;
 }
 
 .header__link:hover::after {
@@ -115,9 +124,9 @@ body {
 .profile__logo {
     width: 184px;
     height: 100%;
-    border-radius: 50%;
     max-width: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .title {
@@ -144,8 +153,9 @@ body {
 
 .list__link {
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
     color: #660afa;
+
+    transition: color 0.3s ease-in-out;
 }
 
 .list__link:hover {
@@ -154,17 +164,20 @@ body {
 
 .list__item:before {
     content: "";
+
     position: absolute;
     top: 8px;
     left: 0;
+
     width: 10px;
     height: 10px; 
+
     border: 1px solid #6d07a8;
     border-radius: 50%;
 }
 
 .list__item:not(:last-child) {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .list__text{
@@ -183,8 +196,8 @@ margin-bottom: 10px;
 .profile__row {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .profile__picture,
