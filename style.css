@@ -1,12 +1,240 @@
 *,
 *::before,
 *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+img {
+    vertical-align: top;
+}
+
+ul {
+    list-style: none;
+}
+
+.code__pre {
+    padding: 0;
+    margin: 0;
+}
 
 body {
-    /* font-family: "Karla", sans-serif; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #F3E1F4;
+    color: #4d2323;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 80px;
+    padding: 20px;
+}
+
+.header__container {
+    justify-content: flex-end;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 10px;
+}
+
+.header__item:not(:last-child){
+    margin-right: 15px;
+}
+
+.header__link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    color: #030203;
+    text-decoration: none;
+}
+
+.header__link::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -12%;
+    background: #660afa;
+    height: 2px;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.header__link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.header__link:hover {
+    color: #660afa;
+}
+
+.main {
+    padding-top: 120px;
+}
+
+.section {
+    width: calc(50% - 30px);
+    padding: 15px 15px 30px;
+    border-bottom: 2px solid #660afa;
+}
+
+.profile {
+    width: 100%;
+    border-bottom: 5px solid #660afa;
+}
+
+.profile__logo {
+    width: 184px;
+    height: 100%;
+    border-radius: 50%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.title {
     font-family: "Montserrat", sans-serif;
-    background-color: #ffefed;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #7300e6;
+}
+
+.contacts__title,
+.summary__title,
+.skills__title,
+.code__title,
+.courses__title,
+.education__title {
+    margin-bottom: 10px;
+}
+
+.list__item {
+    position: relative;
+    padding-left: 30px;
+}
+
+.list__link {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    color: #660afa;
+}
+
+.list__link:hover {
+    color: #bf2bdd;
+}
+
+.list__item:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #6d07a8;
+    border-radius: 50%;
+}
+
+
+.list__item:not(:last-child) {
+margin-bottom: 10px;
+}
+
+.list__text{
+    padding-left: 10px;
+    color: #7300e6;
+}
+
+.summary__text {
+    color:#57205B
+}
+
+.info__subtitle {
+    color: #1D0B1E;
+}
+
+.profile__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile__picture,
+.profile__info {
+    width: 50%;
+    text-align: center;
+}
+
+.copyright__img {
+    max-width: 100%;
+    height: 45px;
+    object-fit: cover;
+}
+
+.footer {
+    padding: 15px 0;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__img {
+    max-width: 100%;
+    height: 45px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+.section {
+    width: 100%;
+}
+
+.profile__row {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 15px;
+}
+
+.header__list{
+    justify-content: center;
+}
+
+.header__container {
+    justify-content: center;
+}
+
 }
